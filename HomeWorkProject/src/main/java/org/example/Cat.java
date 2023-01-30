@@ -1,17 +1,11 @@
 package org.example;
 
-public class Cat extends Pet {
-    Cat(String name, int age) {
-        super(name, age);
-    }
+public class Cat extends Animal{
 
-    @Override
-    public void makeNoise() {
-        super.makeNoise();
-        System.out.println("Мяу!");
+    Cat(String name) {
+        this.name = name;
     }
-
     public void drinkMilk() {
-        System.out.println("Кошка выпила молоко.");
+        System.out.println("Кошка пьёт воду");
     }
 }
